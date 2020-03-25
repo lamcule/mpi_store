@@ -1,0 +1,46 @@
+version: '2'
+services:
+  app:
+    container_name: app_store_1
+    restart: always
+    build:
+      context: ./docker/app
+      dockerfile: Dockerfile
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+      - ./docker/app/php.ini:/usr/local/etc/php/conf.d/php.ini
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=database"
+    ports:
+      - 9999:80
+#    command: bash -c "composer install && NPM install && php artisan key:generate && php artisan optimize"
+  web:
+    container_name: app_store_web_1
+    restart: always
+    build:
+      context: ./docker/web
+      dockerfile: Dockerfile
+    working_dir: /var/www
+    volumes_from:
+      - app
+    ports:
+      - 31080:80
+      - 31443:443
+  database:
+      restart: always
+      container_name: app_store_mysql_1
+      image: mysql:5.7
+      volumes:
+        - dbdata:/var/lib/mysql
+      environment:
+        - "MYSQL_DATABASE=app_store"
+        - "MYSQL_USER=appStore"
+        - "MYSQL_PASSWORD=appStore@123"
+        - "MYSQL_ROOT_PASSWORD=root"
+      ports:
+          - "31306:3306"
+
+volumes:
+  dbdata:

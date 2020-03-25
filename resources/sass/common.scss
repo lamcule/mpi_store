@@ -1,0 +1,42 @@
+@media (max-width: 525px) {
+  p, span, a{
+    font-size: 13px !important;
+  }
+  .header {
+    .header-text {
+      padding-left: 30px !important;
+    }
+  }
+}
+* {
+  font-size: 15px;
+}
+p {
+  margin: 0;
+}
+.line{
+  border-bottom: 1px solid #ddd;
+  margin: 7px 0;
+}
+.footer_front {
+  p {
+    margin: unset;
+    color: #8e8e93;
+    font-size: 13px;
+  }
+}
+.header {
+  img {
+    width: 70px;
+  }
+  p {
+    margin: unset;
+    color: #8e8e93;
+  }
+  h1 {
+    margin: unset;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #000;
+  }
+}

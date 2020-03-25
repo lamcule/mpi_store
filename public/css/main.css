@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #fff !important;
+}
+
+#app {
+    min-height: 100%;
+    position: relative;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid #ced4da;
+}
+
+.text--grey {
+    color: rgba(0, 0, 0, .5);
+}
+
+.bg--grey {
+    background-color: #f1f1f1;
+}
+
+.padding-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.padding-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*header*/
+.site-name {
+    padding-top: 20px;
+}
+
+.header__right ul li {
+    padding: 0 10px;
+}
+
+.navbar-laravel {
+    box-shadow: unset;
+}
+
+.setting {
+    width: 20px !important;
+}
+
+/*màn hình danh sách ứng dụng*/
+.has-search {
+    padding: 0;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.form-control:focus {
+    box-shadow: unset;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.list-app{
+    min-height: 265px;
+}
+
+.list-app .card-header .form-group {
+    margin-bottom: 0;
+}
+
+.list-app .card-header input {
+    border-radius: 25px;
+    border: 0;
+    font-size: 14px;
+}
+
+.icon-create {
+    font-size: 30px;
+}
+
+.app-item {
+    width: 20%;
+    border-right: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    min-height: 285px;
+}
+
+.app-item:nth-of-type(5n + 1) {
+    border-left: 1px solid #dee2e6;
+}
+
+.app-item img {
+    margin-top: 15px;
+    height: 150px;
+    width: 150px;
+    border-radius: 30px;
+}
+
+.app-item__info {
+    padding-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*màn hình tạo mới ứng dụng*/
+.create-app__content {
+    padding-top: 20px;
+}
+
+.create-app__content input {
+    height: 45px !important;
+}
+
+.image-files {
+    margin-top: 20px;
+}
+
+.image-files i {
+    font-size: 20px;
+}
+
+.app-files {
+    margin-top: 20px;
+}
+
+.app-files__row {
+    padding: 15px 0;
+}
+
+table td {
+    padding: 15px 40px !important;
+}
+
+/*footer*/
+.footer {
+    margin-top: 300px;
+}
+.footer div {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
